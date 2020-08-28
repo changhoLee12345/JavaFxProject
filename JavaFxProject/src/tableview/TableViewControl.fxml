@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="333.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableview.TableViewController">
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="66.0" prefHeight="200.0" prefWidth="450.0">
+      </TableView>
+      <Button fx:id="btnSave" layoutX="204.0" layoutY="288.0" mnemonicParsing="false" text="save" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

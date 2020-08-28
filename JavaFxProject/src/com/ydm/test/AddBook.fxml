@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="52.0" layoutY="56.0" text="도서코드" />
+      <Label layoutX="52.0" layoutY="88.0" text="도서명" />
+      <Label layoutX="52.0" layoutY="122.0" text="저자" />
+      <Label layoutX="52.0" layoutY="153.0" text="판매금액" />
+      <Label layoutX="52.0" layoutY="189.0" text="판매량" />
+      
+      <Button id="btnSave" layoutX="100.0" layoutY="259.0" mnemonicParsing="false" text="저장" />
+      <Button id="btnCancel" layoutX="178.0" layoutY="259.0" mnemonicParsing="false" text="취소" />
+      
+      <TextField id="tfBookCode" layoutX="124.0" layoutY="52.0" prefHeight="23.0" prefWidth="151.0" />
+      <TextField id="tfBookName" layoutX="124.0" layoutY="84.0" prefHeight="23.0" prefWidth="151.0" />
+      <TextField id="tfBookAuthor" layoutX="124.0" layoutY="118.0" prefHeight="23.0" prefWidth="151.0" />
+      <TextField id="tfBookPrice" layoutX="124.0" layoutY="149.0" prefHeight="23.0" prefWidth="151.0" />
+      <TextField id="tfBookQty" layoutX="124.0" layoutY="185.0" prefHeight="23.0" prefWidth="151.0" />
+   </children>
+</AnchorPane>

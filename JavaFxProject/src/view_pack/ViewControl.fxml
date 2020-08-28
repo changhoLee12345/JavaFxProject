@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane prefHeight="180.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" 
+    fx:controller="view_pack.ViewController">
+   <children>
+      <Label layoutX="11.0" layoutY="9.0" text="ListView" />
+      <Label layoutX="125.0" layoutY="9.0" text="TableView" />
+      <Label layoutX="425.0" layoutY="9.0" text="ImageView" />
+      <ListView fx:id="listView" layoutX="10.0" layoutY="30.0" prefHeight="100.0" prefWidth="100.0" />
+      <TableView fx:id="tableView" layoutX="120.0" layoutY="30.0" prefHeight="100.0" prefWidth="290.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="스마트폰" />
+          <TableColumn prefWidth="100.0" text="이미지" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="60.0" layoutX="430.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="190" layoutY="145" onAction="#handleBtnRegAction" text="확인">
+      	<graphic>
+      		<ImageView>
+      			<image><Image url="@/icons/new.png" /></image>
+      		</ImageView>
+      	</graphic>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="260" onAction="#handleBtnCancelAction" layoutY="145" text="취소" >
+      	<graphic>
+      		<ImageView>
+      			<image><Image url="@/icons/save.png" /></image>
+      		</ImageView>
+      	</graphic>
+      </Button>
+   </children>
+</AnchorPane>

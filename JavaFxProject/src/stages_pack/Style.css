@@ -1,0 +1,11 @@
+
+.whiteColor {
+	-fx-text-fill: yellow;
+}
+
+Button:hover {
+	-fx-text-fill: blue;
+	-fx-font-size: 30;
+	-fx-background-color: white;
+}
+

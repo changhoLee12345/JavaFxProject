@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="project60.RootController">
+   <children>
+      <Label fx:id="answer1" layoutX="1.0" layoutY="1.0" text="Answer1" />
+      <Label fx:id="answer2" layoutX="31.0" layoutY="1.0" text="Answer2" />
+      <Label fx:id="answer3" layoutX="51.0" layoutY="1.0" text="Answer3" />
+      <RadioButton fx:id="rad1" layoutX="47.0" layoutY="47.0" mnemonicParsing="false" text="RadioButton">
+         <toggleGroup>
+            <ToggleGroup fx:id="answer" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rad2" layoutX="47.0" layoutY="80.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$answer" />
+      <RadioButton fx:id="rad3" layoutX="47.0" layoutY="111.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$answer" />
+      <Button fx:id="btnChange" layoutX="75.0" layoutY="155.0" mnemonicParsing="false" text="change" />
+   </children>
+</AnchorPane>

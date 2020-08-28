@@ -1,0 +1,25 @@
+Label {
+	-fx-background-color: yellow;
+	-fx-font-size: 40;
+}
+
+#lblId {
+	-fx-text-fill: white;
+	-fx-background-color: blue;
+}
+
+.lblClass {
+	-fx-font-size: 40;
+	-fx-font-weight: bold;
+	-fx-background-color: cyan;
+}
+
+Button {
+	-fx-background-color: yellow;
+	-fx-text-fill: #000000;
+}
+
+Button:hover {
+	-fx-background-color: green;
+	-fx-text-fill: #ffff00;
+}

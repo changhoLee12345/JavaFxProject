@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+	prefHeight="150" prefWidth="420" fx:controller="button_pack.ButtonController">
+	<padding>
+		<Insets topRightBottomLeft="10" />
+	</padding>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="100.0" spacing="20">
+               <children>
+                  <CheckBox fx:id="chk1" text="안경" onAction="#handleCheckAction" />
+                  <CheckBox fx:id="chk2" text="모자" />
+               </children>
+            </VBox>
+            <ImageView fx:id="imageView" fitHeight="99.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/geek.gif" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20">
+            	<fx:define>
+            		<ToggleGroup fx:id="group" />
+            	</fx:define>
+               <children>
+                  <RadioButton toggleGroup="$group" fx:id="rad1" userData="BubbleChart" text="BubbleChart" selected="true" />
+                  <RadioButton toggleGroup="$group" fx:id="rad2" userData="BarChart" text="BarChart" />
+                  <RadioButton toggleGroup="$group" fx:id="rad3" userData="AreaChart" text="AreaChart" />
+               </children>
+            </VBox>
+            <ImageView fx:id="imageView2" fitHeight="98.0" fitWidth="135.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/BubbleChart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Button fx:id="exitBtn" text="Button" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

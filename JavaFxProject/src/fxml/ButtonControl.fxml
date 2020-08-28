@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="fxml.ButtonController" 
+	prefHeight="50" prefWidth="300"
+	alignment="CENTER" spacing="20">
+	<Button fx:id="btnNew" text="New" />
+	<Button fx:id="btnOpen" text="Open" />
+	<Button fx:id="btnSave" text="Save" onAction="#btnSaveAction" />
+</HBox>
+

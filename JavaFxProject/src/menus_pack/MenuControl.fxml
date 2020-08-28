@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<BorderPane fx:id="root" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menus_pack.MenuController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="File">
+            <items>
+              <MenuItem fx:id="menuNew" text="New" />
+              <MenuItem fx:id="menuOpen" text="Open" />
+              <SeparatorMenuItem />
+              <MenuItem fx:id="menuClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu text="Edit">
+            <items>
+              <MenuItem fx:id="menuDelete" text="Delete" />
+            </items>
+          </Menu>
+          <Menu text="Help">
+            <items>
+              <MenuItem text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+   </center>
+</BorderPane>

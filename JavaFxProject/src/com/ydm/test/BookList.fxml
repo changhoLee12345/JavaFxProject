@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+	fx:controller="com.ydm.test.BookController">
+   <children>
+      <TableView fx:id="tableView" layoutY="43.0" prefHeight="256.0" prefWidth="500.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="도서코드" />
+          <TableColumn prefWidth="75.0" text="도서명" />
+          <TableColumn prefWidth="75.0" text="저자" />
+          <TableColumn prefWidth="75.0" text="단가" />
+          <TableColumn prefWidth="75.0" text="판매량" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="185.0" layoutY="312.0" text="추가" />
+      <Button fx:id="btnChart" layoutX="250.0" layoutY="312.0" text="차트" />
+      <Label layoutX="31.0" layoutY="21.0" text="Book List" />
+   </children>
+</AnchorPane>
