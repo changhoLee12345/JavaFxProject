@@ -33,7 +33,7 @@ public class AppMain extends Application {
 		root.setSpacing(20);
 
 		Label label = new Label();
-		label.setText("Hello, JavaFX");
+		label.setText("Hello, JavaFX"); 
 		label.setFont(new Font(50));
 
 		Button button = new Button();
